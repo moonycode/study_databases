@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -82,
-    "scrollLeft": -81,
+    "scrollTop": -69,
+    "scrollLeft": -7,
     "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
@@ -93,7 +93,7 @@
             "id": "3af2f9ee-dc7c-497f-b040-4dcc2fc8bcb8"
           },
           {
-            "name": "Height(cm)",
+            "name": "Height",
             "comment": "키(cm)",
             "dataType": "INTEGER",
             "default": "",
@@ -108,7 +108,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 65.5654296875,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -116,7 +116,7 @@
             "id": "986dbda9-a76f-4824-8c10-744dc509ac13"
           },
           {
-            "name": "Weight(kg)",
+            "name": "Weight",
             "comment": "체중(kg)",
             "dataType": "INTEGER",
             "default": "",
@@ -131,7 +131,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 64.61328125,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -139,7 +139,7 @@
             "id": "70e52e2d-aeaf-4e1b-be1f-cea5b6046c3e"
           },
           {
-            "name": "Blood_Pressure(mmHg)",
+            "name": "Blood_Pressure",
             "comment": "혈압(mmHg)",
             "dataType": "VARCHAR(50)",
             "default": "",
@@ -154,7 +154,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 141.4326171875,
+              "widthName": 94.498046875,
               "widthComment": 74.9345703125,
               "widthDataType": 87.71875,
               "widthDefault": 60
@@ -162,7 +162,7 @@
             "id": "9790bbe1-6468-4cec-a492-75d6bcd2d624"
           },
           {
-            "name": "Glucose(mg/dL)",
+            "name": "Glucose",
             "comment": "혈당(mg/dL)",
             "dataType": "INTEGER",
             "default": "",
@@ -177,7 +177,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 94.47900390625,
+              "widthName": 60,
               "widthComment": 72.7890625,
               "widthDataType": 60,
               "widthDefault": 60
@@ -258,7 +258,7 @@
           "active": false,
           "left": 517,
           "top": 128,
-          "zIndex": 348,
+          "zIndex": 20,
           "widthName": 60,
           "widthComment": 83.61181640625
         },
@@ -320,7 +320,7 @@
           "active": false,
           "left": 22,
           "top": 136,
-          "zIndex": 343,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -382,7 +382,7 @@
           "active": false,
           "left": 34,
           "top": 265,
-          "zIndex": 344,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 60
         },
@@ -444,7 +444,7 @@
           "active": false,
           "left": 557,
           "top": 470,
-          "zIndex": 345,
+          "zIndex": 6,
           "widthName": 67.025390625,
           "widthComment": 60
         },
@@ -506,7 +506,7 @@
           "active": false,
           "left": 571,
           "top": 658,
-          "zIndex": 341,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60
         },
@@ -568,7 +568,7 @@
           "active": false,
           "left": 1116,
           "top": 200,
-          "zIndex": 338,
+          "zIndex": 1,
           "widthName": 86.55078125,
           "widthComment": 60
         },
@@ -630,7 +630,7 @@
           "active": false,
           "left": 1124,
           "top": 426,
-          "zIndex": 339,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 60
         },
@@ -732,7 +732,7 @@
           "columnIds": [
             "6cc53a03-461c-4c65-bc45-fa51a70dea4d"
           ],
-          "x": 763.381591796875,
+          "x": 739.914306640625,
           "y": 381.5,
           "direction": "bottom"
         },
@@ -784,7 +784,7 @@
           "columnIds": [
             "6cc53a03-461c-4c65-bc45-fa51a70dea4d"
           ],
-          "x": 1009.76318359375,
+          "x": 962.82861328125,
           "y": 254.75,
           "direction": "right"
         },
