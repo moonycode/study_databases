@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -259,
-    "scrollLeft": -218,
+    "scrollTop": -270,
+    "scrollLeft": -210,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -18,7 +18,7 @@
       "relationship": true
     },
     "database": "MySQL",
-    "databaseName": "",
+    "databaseName": "Members",
     "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
@@ -95,9 +95,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 242.083,
-          "top": 495.1663,
-          "zIndex": 32,
+          "left": 239.8608,
+          "top": 515.1661,
+          "zIndex": 65,
           "widthName": 60,
           "widthComment": 60
         },
@@ -106,8 +106,54 @@
       },
       {
         "name": "Members",
-        "comment": "중복 없는 Datas",
+        "comment": "",
         "columns": [
+          {
+            "name": "Name",
+            "comment": "이름",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "49dff1ca-522e-4f0e-a61f-e252af015c06"
+          },
+          {
+            "name": "Age",
+            "comment": "나이",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1cfa0564-e113-46f7-881a-751e0acf48bc"
+          },
           {
             "name": "Number",
             "comment": "전화번호",
@@ -225,12 +271,12 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 737.6668,
           "top": 464.2499,
-          "zIndex": 40,
+          "zIndex": 69,
           "widthName": 60,
-          "widthComment": 95.18359375
+          "widthComment": 60
         },
         "visible": true,
         "id": "2532589e-5d5f-4017-a3bf-76e3ba62353e"
@@ -288,9 +334,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1257.3343,
-          "top": 495.25,
-          "zIndex": 28,
+          "left": 1256.2232,
+          "top": 515.2498,
+          "zIndex": 66,
           "widthName": 89.42626953125,
           "widthComment": 60
         },
@@ -350,9 +396,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1273.5833,
+          "left": 1272.4722,
           "top": 737.1663,
-          "zIndex": 33,
+          "zIndex": 67,
           "widthName": 60,
           "widthComment": 60
         },
@@ -438,7 +484,7 @@
           "columnIds": [
             "dd841ea1-fa72-4691-a179-b11cfd2eef65"
           ],
-          "x": 1461.208544140625,
+          "x": 1460.097444140625,
           "y": 737.1663,
           "direction": "top"
         },
@@ -447,8 +493,8 @@
           "columnIds": [
             "370b5136-6c48-4a86-8a26-ad36d642444f"
           ],
-          "x": 1461.097727734375,
-          "y": 605.25,
+          "x": 1459.986627734375,
+          "y": 625.2498,
           "direction": "bottom"
         },
         "constraintName": "fk_hobby_list_to_members_hobby",
@@ -465,7 +511,7 @@
             "76a61ffe-b8af-4a18-97ce-bd14ee5491b0"
           ],
           "x": 1145.9236359375,
-          "y": 549.9999,
+          "y": 570.4999,
           "direction": "right"
         },
         "end": {
@@ -473,8 +519,8 @@
           "columnIds": [
             "3e1ac45c-d890-4bf7-9369-c9ba0946e274"
           ],
-          "x": 1257.3343,
-          "y": 550.25,
+          "x": 1256.2232,
+          "y": 570.2498,
           "direction": "left"
         },
         "constraintName": "fk_members_to_members_hobby",
@@ -490,8 +536,8 @@
           "columnIds": [
             "bb00a8fe-db58-40e9-830a-02c9e4814264"
           ],
-          "x": 628.7070234375,
-          "y": 550.1663,
+          "x": 626.4848234375,
+          "y": 570.1661,
           "direction": "right"
         },
         "end": {
@@ -500,7 +546,7 @@
             "218b5342-9846-43af-806a-7e023927bf4d"
           ],
           "x": 737.6668,
-          "y": 549.9999,
+          "y": 570.4999,
           "direction": "left"
         },
         "constraintName": "fk_gender_to_members",
@@ -526,7 +572,7 @@
             "b93e605e-b9d6-4ec1-8762-33c98f9d748d"
           ],
           "x": 941.79521796875,
-          "y": 635.7499,
+          "y": 676.7499,
           "direction": "bottom"
         },
         "constraintName": "fk_address_to_members",
