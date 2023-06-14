@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
-    "zoomLevel": 1,
+    "scrollTop": -76,
+    "scrollLeft": -85,
+    "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -43,19 +43,599 @@
   "table": {
     "tables": [
       {
-        "name": "",
-        "comment": "",
-        "columns": [],
+        "name": "Patients",
+        "comment": "피검사자 정보",
+        "columns": [
+          {
+            "name": "Name",
+            "comment": "이름",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "120a2350-e1b4-4c32-b55b-31627171855c"
+          },
+          {
+            "name": "Age",
+            "comment": "나이",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3af2f9ee-dc7c-497f-b040-4dcc2fc8bcb8"
+          },
+          {
+            "name": "Height(cm)",
+            "comment": "키(cm)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.5654296875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "986dbda9-a76f-4824-8c10-744dc509ac13"
+          },
+          {
+            "name": "Weight(kg)",
+            "comment": "체중(kg)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.61328125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "70e52e2d-aeaf-4e1b-be1f-cea5b6046c3e"
+          },
+          {
+            "name": "Blood_Pressure(mmHg)",
+            "comment": "혈압(mmHg)",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 141.4326171875,
+              "widthComment": 74.9345703125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "9790bbe1-6468-4cec-a492-75d6bcd2d624"
+          },
+          {
+            "name": "Glucose(mg/dL)",
+            "comment": "혈당(mg/dL)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.47900390625,
+              "widthComment": 72.7890625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "51e145ed-790a-4709-8f58-c3428ce79cfc"
+          },
+          {
+            "name": "Patient_ID",
+            "comment": "피검사자 ID(PK)",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.70263671875,
+              "widthComment": 96.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "6cc53a03-461c-4c65-bc45-fa51a70dea4d"
+          },
+          {
+            "name": "Gender_ID",
+            "comment": "Gender FK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 65.5908203125,
+              "widthComment": 65.58447265625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "4a53da6f-0c8c-4928-8fff-fbcf1adccfed"
+          },
+          {
+            "name": "Result_ID",
+            "comment": "Result FK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "4eec20bd-f0ec-45dd-9e56-3605a3ec1038"
+          }
+        ],
         "ui": {
           "active": false,
-          "left": 200,
-          "top": 100,
-          "zIndex": 1,
+          "left": 517,
+          "top": 128,
+          "zIndex": 348,
+          "widthName": 60,
+          "widthComment": 83.61181640625
+        },
+        "visible": true,
+        "id": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64"
+      },
+      {
+        "name": "Gender",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Gender",
+            "comment": "성별",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "dd6c93e5-37ff-4b0d-8574-1c723759c27a"
+          },
+          {
+            "name": "Gender_ID",
+            "comment": "Gender PK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.5908203125,
+              "widthComment": 66.314453125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "f3429101-f83f-433b-a688-aca73ff17005"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 22,
+          "top": 136,
+          "zIndex": 343,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64"
+        "id": "d3a1db73-2d72-45a2-bfe1-76df6c06a44b"
+      },
+      {
+        "name": "Results",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Result",
+            "comment": "검진 결과",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "5e42a5d9-8779-4ce2-971d-c2a503305e2d"
+          },
+          {
+            "name": "Result_ID",
+            "comment": "Result PK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "9fb47ddc-8f0f-4f5f-956a-4ab822daecd9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 34,
+          "top": 265,
+          "zIndex": 344,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "55aebb65-62ad-4929-a7d3-edfe4a0f1089"
+      },
+      {
+        "name": "Items_Pats",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Item_ID",
+            "comment": "Item FK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "39fac5e8-deeb-4e65-88e7-e9c838ec8467"
+          },
+          {
+            "name": "Patient_ID",
+            "comment": "피검사자 ID(FK)",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62.70263671875,
+              "widthComment": 95.8818359375,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "24dffb6c-a816-4bba-9cea-662dd85aa786"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 557,
+          "top": 470,
+          "zIndex": 345,
+          "widthName": 67.025390625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "5de42577-7d59-4105-81a5-17980d7909ef"
+      },
+      {
+        "name": "Items",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Item",
+            "comment": "재검진 항목",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "c0cd1b6e-445b-4b59-ba94-48815d44712e"
+          },
+          {
+            "name": "Item_ID",
+            "comment": "Item PK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "88fcffd7-7893-4a6d-ae7e-5dbcb83933be"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 571,
+          "top": 658,
+          "zIndex": 341,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "1906e641-a650-488c-b6cf-2db5d8b81c4f"
+      },
+      {
+        "name": "Opinions_Pats",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Opinion_ID",
+            "comment": "Opinions FK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.0380859375,
+              "widthComment": 73.53173828125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "c317cf99-5e31-4409-a144-d420f9f56ce5"
+          },
+          {
+            "name": "Patient_ID",
+            "comment": "피검사자 ID(FK)",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62.70263671875,
+              "widthComment": 95.8818359375,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "1bc87490-f239-46b0-a63a-86d273d7bea4"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1116,
+          "top": 200,
+          "zIndex": 338,
+          "widthName": 86.55078125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7af6ddc4-4f53-4830-b179-ef577886fd98"
+      },
+      {
+        "name": "Opinions",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Opinion",
+            "comment": "유지 방안",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "e2f36097-a5c7-47db-8355-ddb8e887d0ce"
+          },
+          {
+            "name": "Opinion_ID",
+            "comment": "Opinions PK",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0380859375,
+              "widthComment": 74.26171875,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "ae0e4d28-714b-4844-a5f0-c216f3e3272a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1124,
+          "top": 426,
+          "zIndex": 339,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7bc89bfe-a526-45dd-a748-3e25573acbe9"
       }
     ],
     "indexes": []
@@ -64,6 +644,163 @@
     "memos": []
   },
   "relationship": {
-    "relationships": []
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d3a1db73-2d72-45a2-bfe1-76df6c06a44b",
+          "columnIds": [
+            "f3429101-f83f-433b-a688-aca73ff17005"
+          ],
+          "x": 408.6240234375,
+          "y": 191,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64",
+          "columnIds": [
+            "4a53da6f-0c8c-4928-8fff-fbcf1adccfed"
+          ],
+          "x": 517,
+          "y": 191.375,
+          "direction": "left"
+        },
+        "constraintName": "fk_gender_to_patients",
+        "visible": true,
+        "id": "9b018184-8b8d-4c91-b8ef-3fd7ab197488"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "55aebb65-62ad-4929-a7d3-edfe4a0f1089",
+          "columnIds": [
+            "9fb47ddc-8f0f-4f5f-956a-4ab822daecd9"
+          ],
+          "x": 408.71875,
+          "y": 320,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64",
+          "columnIds": [
+            "4eec20bd-f0ec-45dd-9e56-3605a3ec1038"
+          ],
+          "x": 517,
+          "y": 318.125,
+          "direction": "left"
+        },
+        "constraintName": "fk_result_to_patients",
+        "visible": true,
+        "id": "7a5cffbb-31e0-4752-ac93-c5947dbaae91"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "1906e641-a650-488c-b6cf-2db5d8b81c4f",
+          "columnIds": [
+            "88fcffd7-7893-4a6d-ae7e-5dbcb83933be"
+          ],
+          "x": 763.665283203125,
+          "y": 658,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "5de42577-7d59-4105-81a5-17980d7909ef",
+          "columnIds": [
+            "39fac5e8-deeb-4e65-88e7-e9c838ec8467"
+          ],
+          "x": 763.651611328125,
+          "y": 580,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_items_to_items_pats",
+        "visible": true,
+        "id": "337e8236-a1c1-4f18-972a-6cf57f960b43"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64",
+          "columnIds": [
+            "6cc53a03-461c-4c65-bc45-fa51a70dea4d"
+          ],
+          "x": 763.381591796875,
+          "y": 381.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "5de42577-7d59-4105-81a5-17980d7909ef",
+          "columnIds": [
+            "24dffb6c-a816-4bba-9cea-662dd85aa786"
+          ],
+          "x": 763.651611328125,
+          "y": 470,
+          "direction": "top"
+        },
+        "constraintName": "fk_patients_to_items_pats",
+        "visible": true,
+        "id": "4c75c86b-0ef4-4b6a-b7b0-06a8e396ce85"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7bc89bfe-a526-45dd-a748-3e25573acbe9",
+          "columnIds": [
+            "ae0e4d28-714b-4844-a5f0-c216f3e3272a"
+          ],
+          "x": 1325.624267578125,
+          "y": 426,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "7af6ddc4-4f53-4830-b179-ef577886fd98",
+          "columnIds": [
+            "c317cf99-5e31-4409-a144-d420f9f56ce5"
+          ],
+          "x": 1324.8193359375,
+          "y": 310,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_opinions_to_opinions_pats",
+        "visible": true,
+        "id": "410dcecc-bb7b-4d97-8250-6f86be88ecb8"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "4e03dc88-46b4-4df9-8cc2-c0ad4e17dc64",
+          "columnIds": [
+            "6cc53a03-461c-4c65-bc45-fa51a70dea4d"
+          ],
+          "x": 1009.76318359375,
+          "y": 254.75,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "7af6ddc4-4f53-4830-b179-ef577886fd98",
+          "columnIds": [
+            "1bc87490-f239-46b0-a63a-86d273d7bea4"
+          ],
+          "x": 1116,
+          "y": 255,
+          "direction": "left"
+        },
+        "constraintName": "fk_patients_to_opinions_pats",
+        "visible": true,
+        "id": "89f0c80a-4fd2-4f86-8263-11da84efe8d3"
+      }
+    ]
   }
 }
